@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#status-container {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+#charging-status {
+  color: #4CAF50;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+#battery {
+  box-sizing: content-box;
+  height: 7.8em;
+  width: 17.5em;
+  margin: auto;
+  border-radius: 0.6em;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+#battery.green {
+  border: 0.6em solid #4CAF50;
+}
+
+#battery.red {
+  border: 0.6em solid #FF0000;
+}
+
+#charge {
+  position: absolute;
+  height: 6.5em;
+  width: 16.25em;
+  background-color: #4CAF50;
+  top: 0.6em;
+  left: 0.6em;
+}
+
+#charge-level {
+  position: absolute;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+#charging-time {
+  text-align: center;
+  font-size: 1.7em;
+  margin-top: 1.4em;
+}
+
+.active {
+  animation: charge-animation 3s infinite linear;
+}
+
+@keyframes charge-animation {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 16.25em;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ffffff;
+  font-size: 14px;
+  color: #777;
+}
+
+.footer a {
+  color: #777;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
