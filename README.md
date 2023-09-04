@@ -29,17 +29,17 @@
 
 ## Setup
 
-https://omkarsalunkheatp1211.github.io/Analog/
+https://omkarsalunkheatp1211.github.io/Battery_Status/
 
 OR
 
 Open your terminal or command prompt and Clone the repository to your local machine:
 ```javascript
-git clone https://github.com/omkarsalunkheatp1211/Analog.git
+git clone https://github.com/omkarsalunkheatp1211/Battery_Status.git
 ```
-Go to the Analog directory
+Go to the Battery_Status
 ```javascript
- cd Analog
+ cd Battery_Status
 ```
 Run index.html file.
 ```javascript
